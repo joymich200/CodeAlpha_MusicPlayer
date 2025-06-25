@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: whitesmoke;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player-container {
+  background: #222;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.now-playing h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-top: 70px;
+}
+
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.progress-container,
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.progress-container input,
+.volume-container input {
+  flex: 1;
+}
+
+.playlist {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.playlist div {
+  padding: 8px;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+
+.playlist div.active {
+  background-color: #333;
+}
+
+@media (max-width: 600px) {
+  .controls button {
+    font-size: 1.5rem;
+  }
+}
